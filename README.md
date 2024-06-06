@@ -1,6 +1,7 @@
 # User Experience
 ## Wireframes
-In the planning stage I used a wireframe app called [balsamiq](https://balsamiq.com/) to create the initial design of the webiste.
+In the planning stage I used a wireframe app called [balsamiq](https://balsamiq.com/) to create the initial design of the website.
+
 ![wireframe opening page](assets/images/readme/openingpage.png)
 
 ![wireframe quiz selection](assets/images/readme/quizselection.png)
