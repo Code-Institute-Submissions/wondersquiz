@@ -96,6 +96,11 @@ input {
 
 /*media query for tablets*/
 @media screen and (min-width: 768px) {
+    /*body styles*/
+body {
+    font-size: 170%;
+}
+    
     /*main content styles*/
 #how_to_container, #qa_container, #score_container {
     width: 70vw;
