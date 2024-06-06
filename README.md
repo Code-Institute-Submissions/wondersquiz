@@ -15,6 +15,11 @@
 * I would like to add a difficulty section so the users can determine the quiz based on their knowledge.
 * I would like to add quizes on other subjects.
 # Acessibility
+During the creation of the website I have kept the accessibility as friendly as possible, I have done this by:
+* Using semantic HTML.
+* Ensuring the colours have sufficent contrast.
+* Used a clear font that is easy to read. 
+
 # Testing
 ## Technologies used
 * HTML5 - to build initial content and structure for the website.
