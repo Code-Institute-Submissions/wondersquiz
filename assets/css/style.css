@@ -44,6 +44,7 @@ header {
 #header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: 2px solid black;
     border-radius: 12px;
     background: gainsboro;
@@ -58,6 +59,7 @@ header {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: gainsboro;
 }
 
@@ -104,6 +106,10 @@ body {
     /*main content styles*/
 #how_to_container, #qa_container, #score_container {
     width: 70vw;
+}
+
+button, input {
+    font-size: 130%;
 }
 
 }
