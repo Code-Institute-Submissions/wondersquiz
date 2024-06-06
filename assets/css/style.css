@@ -17,7 +17,14 @@ body {
     font-size: 20px;
     color: black;
     font-family: 'Roboto Mono';
-    background-image: url(../images/headerimage.png);
+    background-image: url(../images/backgroundimage.png);
     background-repeat: round;
     background-size: 100px;
+}
+
+main {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
 }
