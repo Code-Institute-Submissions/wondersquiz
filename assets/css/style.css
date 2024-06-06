@@ -28,3 +28,24 @@ main {
     flex-direction: column;
     align-items: center;
 }
+
+h1 {
+    font-family: 'Fjalla One'; 
+}
+
+/*styles for header*/
+header {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 12px;
+    background: gainsboro;
+    padding: 1rem;
+}
