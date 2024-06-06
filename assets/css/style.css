@@ -113,3 +113,8 @@ button, input {
 }
 
 }
+
+/*media query for small laptops*/
+@media screen and (min-width: 992px) {
+    
+}
