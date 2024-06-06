@@ -10,5 +10,10 @@
 # Acessibility
 # Testing
 ## Technologies used
+* HTML5 - to build initial content and structure for the website.
+* CSS - to add style to the content and website.
+* JavaScript - to add interactivity to the website.
+* Github - used to deploy the website.
+* Gitpod - used to build and edit the website.
 ## Deployment and Local deployment
 # Credits
