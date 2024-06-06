@@ -51,7 +51,7 @@ header {
 }
 
 /*main content styles*/
-main > div {
+#how_to_container, #qa_container, #score_container {
     border: 2px solid black;
     border-radius: 12px;
     margin: 3rem 1rem;
@@ -59,4 +59,15 @@ main > div {
     display: flex;
     flex-direction: column;
     background: gainsboro;
+}
+
+/*button styles*/
+button {
+    border: 2px solid black;
+    border-radius: 12px;
+    background: gainsboro;
+    width: 45vw;
+    height: 7vh;
+    margin-top: 1rem;
+
 }
