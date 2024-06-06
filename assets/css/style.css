@@ -116,5 +116,8 @@ button, input {
 
 /*media query for small laptops*/
 @media screen and (min-width: 992px) {
-    
+    button {
+        height: 10vh;
+    }
+
 }
