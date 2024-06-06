@@ -7,6 +7,11 @@
 * I want the website to tell me how many questions I got correct and incorrect.
 ## Design choices
 # Features
+## Existing features
+## Future features
+* I would like to add a scoreboard so users can see who has got the most questions right.
+* I would like to add a difficulty section so the users can determine the quiz based on their knowledge.
+* I would like to add quizes on other subjects.
 # Acessibility
 # Testing
 ## Technologies used
