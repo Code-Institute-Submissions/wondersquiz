@@ -13,6 +13,9 @@ In the planning stage I used a wireframe app called [balsamiq](https://balsamiq.
 * I want to be able to enter a username and the website respond to my name.
 * I want the website to tell me how many questions I got correct and incorrect.
 
+### Returning user stories
+* I want the questions to be random every time so I don't know the order and can test my ability to recall the information.
+
 ## Design choices
 ### Colour scheme
 ![Coolers palete](assets/images/readme/wondersquizcolorscheme.png)
