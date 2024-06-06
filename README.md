@@ -6,6 +6,8 @@
 * I want to be able to enter a username and the website respond to my name.
 * I want the website to tell me how many questions I got correct and incorrect.
 ## Design choices
+### Colour scheme
+![Coolers pallete](assets/images/readme/wondersquizcolorscheme.png)
 # Features
 ## Existing features
 ## Future features
