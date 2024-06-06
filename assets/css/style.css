@@ -49,3 +49,14 @@ header {
     background: gainsboro;
     padding: 1rem;
 }
+
+/*main content styles*/
+main > div {
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 3rem 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    background: gainsboro;
+}
