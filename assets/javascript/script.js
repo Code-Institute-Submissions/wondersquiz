@@ -29,11 +29,15 @@ function submitUsername(){
     let usernameSubmit = document.getElementById("submit");
     let greet = document.getElementById("greet");
 
-    greet.innerHTML = `Hello ${usersName} are you ready to test your knowledge`;
+    if(usersName.length < 3 || usersName.length > 9){
+        alert("Please choose a username between 3 and 9 characters");
+    } else {
+        greet.innerHTML = `Hello ${usersName} are you ready to test your knowledge`;
     greetContainer.style.display = "block flex";
 
     usernameContainer.style.display ="none";
-    quizContainer.style.display = "block flex"
+    quizContainer.style.display = "block flex";
+    }
 }
 
 //ancient wonders quiz
