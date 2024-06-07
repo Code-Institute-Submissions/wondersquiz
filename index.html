@@ -16,8 +16,6 @@
     <header>
         <div id="header">
             <h1>Wonders Of The World</h1>
-            <h3 id="subtitleA">Ancient Wonders Of The World</h3>
-            <h3 id="subtitleB">Modern Wonders Of The World</h3>
         </div>
     </header>
     <main>
@@ -30,9 +28,12 @@
         </div>
         <div id="username_container">
             <input type="text" id="username" placeholder="Enter your name">
-            <button type="submit" id="submit">Submit</button>
-            
+            <button type="submit" id="submit" onclick="submitUsername()">Submit</button>
         </div>
+        <div id="greet_container">
+            <h4 id="greet">are you ready to test your knowledge?</h4>
+        </div>
+        
         <div id="quizes_container">
             <button id="ancient_quiz_bttn">Ancient Wonders Quiz</button>
             <button id="modern_quiz_bttn">Modern Wonders Quiz</button>
@@ -46,15 +47,14 @@
                 <h3>
                     Answers
                 </h3>
-
             </div>
         </div>
         <div id="score_container">
             <div id="correct_score">
-                <h4><i class="fa-solid fa-check"></i> Correct score:</h4>
+                <h5><i class="fa-solid fa-check"></i> Correct score:</h5>
             </div>
             <div id="incorrect_score">
-                <h4><i class="fa-solid fa-xmark"></i> Incorrect score:</h4>
+                <h5><i class="fa-solid fa-xmark"></i> Incorrect score:</h5>
             </div>
         </div>
     </main>

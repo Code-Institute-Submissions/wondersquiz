@@ -63,10 +63,14 @@ header {
     background: gainsboro;
 }
 
+#quizes_container {
+    margin-right: 0.5rem;
+}
+/*question and answer container*/
 #qa_container {
     width: 70vw;
 }
-
+/*lets play button container*/
 #lets_play_container {
     margin-bottom: 0.5rem;
 }
@@ -106,6 +110,18 @@ input {
 
 #username {
     padding-left: 0.5rem;
+}
+
+/*user greeting styles*/
+#greet_container {
+    display: flex;
+    align-content: center;
+    width: 60vw;
+    border: 2px solid black;
+    border-radius: 12px;
+    background: gainsboro;
+    margin-top: 1rem;
+    padding: 0.5rem;
 }
 
 /*media query for tablets*/
