@@ -1,22 +1,22 @@
-/**
- * Variable
- */
+//variable
 const letsPlay = document.getElementById("lets_play_container");
 const usernameContainer = document.getElementById("username_container");
 const quizContainer = document.getElementById("quizes_container");
 const qaContainer = document.getElementById("qa_container");
 const scoreContainer = document.getElementById("score_container");
 
-//Onload function
+usernameContainer.style.display = "none";
+quizContainer.style.display = "none";
+qaContainer.style.display = "none";
+scoreContainer.style.display = "none";
 
-//function to display username
+//function to display username input
 function displayUsername(){
 
 }
 
 //function to submit username
 function submitUsername(){
-
 }
 
 //ancient wonders quiz

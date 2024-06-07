@@ -55,7 +55,7 @@ header {
 #how_to_container, #qa_container, #score_container {
     border: 2px solid black;
     border-radius: 12px;
-    margin: 3rem 1rem;
+    margin: 1rem 1rem;
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -65,6 +65,10 @@ header {
 
 #qa_container {
     width: 70vw;
+}
+
+#lets_play_container {
+    margin-bottom: 0.5rem;
 }
 
 /*button styles*/
