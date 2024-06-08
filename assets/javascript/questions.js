@@ -1,7 +1,7 @@
-let ancientQuestions = [
+let ancientQuizQuestions = [
     {
         question: "Which one of these structures is not apart of the wonders of the ancient world?",
-        options: ["The Pyramids of Giza", "The Hanging Gardens of Babylon", "The Temple of Artemis"],
+        options: ["The Pyramids of Giza", "The Hanging Gardens of Babylon", "The Temple of Artemis", "The Great Wall of China"],
         answer: "The Great Wall of China"
     },
     {
@@ -26,7 +26,7 @@ let ancientQuestions = [
     }
 ]
 
-let modernQuestions = [
+let modernQuizQuestions = [
     {
         question: "",
         options: [],
