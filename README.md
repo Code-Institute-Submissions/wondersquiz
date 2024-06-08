@@ -47,4 +47,11 @@ During the creation of the website I have kept accessibility in mind, I have don
 * Gitpod - used to build and edit the website.
 
 ## Deployment and Local deployment
+The website was deployed through github pages, the following steps are used to do this:
+* In the GitHub repository go into the settings section and select pages under the subsection code and automation.
+* Under the build and deployment section of the page select the main branch and make sure the folder selected is /(root).
+* Save these settings and return to the code tab of the repository.
+* Under the deployment section select the deployments link.
+* View your live link.
+
 # Credits

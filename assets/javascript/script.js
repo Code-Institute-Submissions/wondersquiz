@@ -7,6 +7,7 @@ const qaContainer = document.getElementById("qa_container");
 const scoreContainer = document.getElementById("score_container");
 const greetContainer = document.getElementById("greet_container");
 
+
 usernameContainer.style.display = "none";
 greetContainer.style.display = "none";
 quizContainer.style.display = "none";
