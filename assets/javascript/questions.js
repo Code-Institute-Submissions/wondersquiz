@@ -42,12 +42,12 @@ const questionContent = document.getElementById("questionContent");
 //ancient wonders quiz function
 function ancientWonders(){
     let ancientQuizBttn = document.getElementById("ancient_quiz_bttn");
-    
+
     correctScore = 0;
     incorrectScore = 0;
 
-    correctScoreCounter = correctScore.textContent;
-    incorrectScoreCounter = incorrectScore.textContent;
+    correctScoreCounter = correctScore.innerHTML;
+    incorrectScoreCounter = incorrectScore.innerHTML;
 
 }
 
@@ -83,5 +83,12 @@ let modernQuizQuestions = [
 
 //modern wonders quiz
 function modernWonders(){
+    let modernQuizBttn = document.getElementById("modern_quiz_bttn");
+
+    correctScore = 0;
+    incorrectScore = 0;
+
+    correctScoreCounter = correctScore.innerHTML;
+    incorrectScoreCounter = incorrectScore.innerHTML;
 
 }
