@@ -39,6 +39,7 @@ During the creation of the website I have kept accessibility in mind, I have don
 * Used a clear font that is easy to read. 
 
 # Testing
+All information regarding testing is on [testing.md](TESTING.md).
 ## Technologies used
 * HTML5 - to build initial content and structure for the website.
 * CSS - to add style to the content and website.
