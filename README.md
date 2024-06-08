@@ -46,12 +46,18 @@ During the creation of the website I have kept accessibility in mind, I have don
 * Github - used to deploy the website.
 * Gitpod - used to build and edit the website.
 
-## Deployment and Local deployment
+## Deployment
 The website was deployed through github pages, the following steps are used to do this:
 * In the GitHub repository go into the settings section and select pages under the subsection code and automation.
 * Under the build and deployment section of the page select the main branch and make sure the folder selected is /(root).
 * Save these settings and return to the code tab of the repository.
 * Under the deployment section select the deployments link.
 * View your live link.
+
+## Local deployment
+The steps to fork a repository are:
+* Log in to Github (if you have an account, if not sign up for github) 
+* Go to the repository for Wonders Quiz, [Regan Boreland/wondersquiz](https://github.com/Regan-Boreland/wondersquiz)
+* Click fork on the right hand side of the screen (located between notifications and star/saved)
 
 # Credits
