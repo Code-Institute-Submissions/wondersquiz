@@ -60,8 +60,9 @@ The steps to fork a repository are:
 * Go to the repository for Wonders Quiz, [Regan Boreland/wondersquiz](https://github.com/Regan-Boreland/wondersquiz)
 * Click fork on the right hand side of the screen (located between notifications and star/saved)
 
+
 The steps to clone are:
- Log in to Github 
+* Log in to Github 
 * Go to the repository for Wonders Quiz, [Regan Boreland/wondersquiz]( Log in to Github 
 * Go to the repository for Apex MMA, [Regan Boreland/ApexMMA](https://github.com/Regan-Boreland/wondersquiz)
 * Click on the code option and select what you would like to clone with, either: HTTPS, SSH or GitHub CLI. 
@@ -72,3 +73,11 @@ The steps to clone are:
 * Type "Git clone" into the terminal and press enter on your keyboard. 
 
 # Credits
+## Content
+* All icons were take from [font Awesome](https://fontawesome.com/).
+* Background image was taken from [png arts](https://www.pngarts.com/explore/55278).
+* The favicon was taken from [png arts](https://www.pngarts.com/explore/65804).
+
+
+## Acknowledgment
+* Mentor: Jubril Akolade
