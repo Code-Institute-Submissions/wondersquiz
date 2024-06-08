@@ -60,4 +60,15 @@ The steps to fork a repository are:
 * Go to the repository for Wonders Quiz, [Regan Boreland/wondersquiz](https://github.com/Regan-Boreland/wondersquiz)
 * Click fork on the right hand side of the screen (located between notifications and star/saved)
 
+The steps to clone are:
+ Log in to Github 
+* Go to the repository for Wonders Quiz, [Regan Boreland/wondersquiz]( Log in to Github 
+* Go to the repository for Apex MMA, [Regan Boreland/ApexMMA](https://github.com/Regan-Boreland/wondersquiz)
+* Click on the code option and select what you would like to clone with, either: HTTPS, SSH or GitHub CLI. 
+* Open the terminal in your selected code editor and change the current working directory to the location of where you want the cloned directory.
+* Type "Git clone" into the terminal and press enter on your keyboard.)
+* Click on the code option and select what you would like to clone with, either: HTTPS, SSH or GitHub CLI. 
+* Open the terminal in your selected code editor and change the current working directory to the location of where you want the cloned directory.
+* Type "Git clone" into the terminal and press enter on your keyboard. 
+
 # Credits
