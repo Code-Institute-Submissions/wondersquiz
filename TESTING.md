@@ -12,10 +12,9 @@ The website has been tested on the following devices:
 `First time visitors`
 | Goals | How are they achieved? |
 | :--- | :--- |
-|  |  |
-|  |  |
-|  |  |
-|  |  |
+| I want to be able to test my knowledge on both the modern wonders and ancient wonders of the world. | The wonders quiz offers a quiz on both the ancient wonders of the world and the modern wonders of the world |
+| I want to be able to enter a username and the website respond to my name. | The wonders quiz includes an input element that will respond with the users name once the user has met the username requirements |
+| I want the website to tell me how many questions I got correct and incorrect. | The wonders quiz has a scoring system that is presented at the bottom of the pages once the user has chosen a quiz. At the end of the quiz the users score will be presented to them. |
 
 `returning users`
 | Goals | How are they achieved? |
@@ -25,7 +24,7 @@ The website has been tested on the following devices:
 ### Fixed bugs
 | Bug | Solution |
 | ---| ---|
-|  |  |
+| Script.js was not linked to index.html correctly | changed href attribute to src attribute |
 |  |  |
 |  |  |
 |  |  |
