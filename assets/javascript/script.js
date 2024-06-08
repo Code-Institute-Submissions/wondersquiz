@@ -14,6 +14,16 @@ quizContainer.style.display = "none";
 qaContainer.style.display = "none";
 scoreContainer.style.display = "none";
 
+//reset webpage
+function resetWebpage(){
+    let title = document.getElementById("title");
+
+    howToContainer.style.display = "block flex";
+    letsPlay.style.display = "block flex";
+    usernameContainer.style.display = "none";
+    alert("Lets Reset");
+}
+
 //function to display username input
 function displayUsername(){
     let letsPlayBttn = document.getElementById("lets_play_bttn");
@@ -33,7 +43,7 @@ function submitUsername(){
     if(usersName.length < 3 || usersName.length > 9){
         alert("Please choose a username between 3 and 9 characters");
     } else {
-        greet.innerHTML = `Hello ${usersName} lets test your knowledge.`;
+        greet.innerHTML = `Hello ${usersName}, lets test your knowledge.`;
     greetContainer.style.display = "block flex";
 
     usernameContainer.style.display ="none";

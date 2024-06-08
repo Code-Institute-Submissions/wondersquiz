@@ -24,8 +24,8 @@ The website has been tested on the following devices:
 ### Fixed bugs
 | Bug | Solution |
 | ---| ---|
-| Script.js was not linked to index.html correctly | changed href attribute to src attribute |
-|  |  |
+| script.js was not linked to index.html correctly | changed href attribute to src attribute |
+| onclick function linked to h1 elements reveals all elements rather than just the pregame message and the lets play button. | wrote a seperate function to reset the webpage rather than using an existing function. |
 |  |  |
 |  |  |
 
