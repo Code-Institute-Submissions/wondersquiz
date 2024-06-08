@@ -33,7 +33,7 @@ function submitUsername(){
     if(usersName.length < 3 || usersName.length > 9){
         alert("Please choose a username between 3 and 9 characters");
     } else {
-        greet.innerHTML = `Hello ${usersName} are you ready to test your knowledge`;
+        greet.innerHTML = `Hello ${usersName} lets test your knowledge.`;
     greetContainer.style.display = "block flex";
 
     usernameContainer.style.display ="none";

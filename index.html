@@ -19,25 +19,30 @@
         </div>
     </header>
     <main>
+        <!--container for instructions and pre game message-->
         <div id="how_to_container">
             <h3>How to play</h3>
                 <p>This is how to works, once you read this click on the lets play button. You'll be taken to a page with two options, either a quiz about the ancient wonders of the world or, a quiz about the modern wonders of the world. Of course it's your choice. For each correct score you gain 1 point, and the same for incorrect scores. The questions won't be easy. Good luck!</p>
         </div>
+        <!--container for button to provide users with game options-->
         <div id="lets_play_container">
             <button id="lets_play_bttn" onclick="displayUsername()">Lets play</button>
         </div>
+        <!--container for both username input and submit username button-->
         <div id="username_container">
             <input type="text" id="username" placeholder="Enter your name">
             <button type="submit" id="submit" onclick="submitUsername()">Submit</button>
         </div>
+        <!--username response message-->
         <div id="greet_container">
             <h4 id="greet">are you ready to test your knowledge?</h4>
         </div>
-        
+        <!--quiz options container-->
         <div id="quizes_container">
             <button id="ancient_quiz_bttn">Ancient Wonders Quiz</button>
             <button id="modern_quiz_bttn">Modern Wonders Quiz</button>
         </div>
+        <!--container that presents questions and potential answers-->
         <div id="qa_container">
             <div id="question_content">
                 <h3>Q1.</h3>
@@ -49,6 +54,7 @@
                 </h3>
             </div>
         </div>
+        <!--container that presents user with correct and incorrect scores-->
         <div id="score_container">
             <div>
                 <h5><i class="fa-solid fa-check"></i> Correct Score:<p>0</p></h5>

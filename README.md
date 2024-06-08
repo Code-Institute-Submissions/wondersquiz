@@ -1,4 +1,6 @@
-### Link to live website can be found at [Wonders Quiz](https://regan-boreland.github.io/wondersquiz/).
+# Wonders Quiz
+
+#### Link to live website can be found at [Wonders Quiz](https://regan-boreland.github.io/wondersquiz/).
 
 # User Experience
 ## Wireframes
