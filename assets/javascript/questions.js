@@ -1,6 +1,6 @@
 //ancient wonders questions and answers
 
-let ancientQuizQuestions = [
+let QuizQuestions = [
     {
         question: "Which one of these structures is not apart of the wonders of the ancient world?",
         options: ["The Pyramids of Giza", "The Hanging Gardens of Babylon", "The Temple of Artemis", "The Great Wall of China"],
@@ -25,7 +25,22 @@ let ancientQuizQuestions = [
         question: "The seven wonders of the ancient world surround which sea?",
         options: ["Atlantic", "Pacific", "The Gulf of Mexico", "The Mediterranian"],
         answer: "The Mediterranian"
-    }
+    },
+    {
+        question: "Which one of these modern wonders is located in Brazil?",
+        options: ["Taj Mahal", "Christ the Redeemer", "Petra", "Chichen Itza"],
+        answer: "Christ the Redeemer"
+    },
+    {
+        question: "One of these structures was built in 80 A.D., which one was it?",
+        options: ["Colosseum", "Great Wall of China", "Machu Picchu", "Taj Mahal"],
+        answer: "Taj Mahal"
+    },
+    {
+        question: "Which one of these structures was built for the architects deceased wife?",
+        options: ["Taj Mahal", "Colossus of Rhoades", "Christ the Redeemer", "Lighthouse of Alexandria"],
+        answer: "Taj Mahal"
+    },
 ]
 
 //variables to keep score
@@ -38,57 +53,11 @@ const correctScoreCounter = document.getElementById("cScore");
 const incorrectScoreCounter = document.getElementById("iScore");
 const questionContent = document.getElementById("questionContent");
 
+//function to start quiz
+function startQuiz(){
+
+}
 
 //ancient wonders quiz function
-function ancientWonders(){
-    let ancientQuizBttn = document.getElementById("ancient_quiz_bttn");
-
-    correctScore = 0;
-    incorrectScore = 0;
-
-    correctScoreCounter = correctScore.innerHTML;
-    incorrectScoreCounter = incorrectScore.innerHTML;
-
-}
-
-//modern wonders questions and answers
-let modernQuizQuestions = [
-    {
-        question: "",
-        options: [],
-        answer: ""
-    },
-    {
-        question: "",
-        options: [],
-        answer: ""
-    },
-    {
-        question: "",
-        options: [],
-        answer: ""
-    },
-    {
-        question: "",
-        options: [],
-        answer: ""
-    },
-    {
-        question: "",
-        options: [],
-        answer: ""
-    },
-
-]
-
-//modern wonders quiz
-function modernWonders(){
-    let modernQuizBttn = document.getElementById("modern_quiz_bttn");
-
-    correctScore = 0;
-    incorrectScore = 0;
-
-    correctScoreCounter = correctScore.innerHTML;
-    incorrectScoreCounter = incorrectScore.innerHTML;
-
-}
+function displayQuestion(){
+};
