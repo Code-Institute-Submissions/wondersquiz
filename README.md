@@ -1,4 +1,5 @@
 # Wonders Quiz
+Wonders Quiz is a website designed for users to test their knowledge on both the modern wonders of the world and the ancient wonders of the world. The target audience for this quiz isn't limited by age however, it would maily appeal to people with an interest in architecture or history.
 
 #### Link to live website can be found at [Wonders Quiz](https://regan-boreland.github.io/wondersquiz/).
 
