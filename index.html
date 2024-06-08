@@ -39,7 +39,7 @@
         </div>
         <!--quiz options container-->
         <div id="quizes_container">
-            <button id="ancient_quiz_bttn">Ancient Wonders Quiz</button>
+            <button id="ancient_quiz_bttn" onclick="ancientWonders()">Ancient Wonders Quiz</button>
             <button id="modern_quiz_bttn">Modern Wonders Quiz</button>
         </div>
         <!--container that presents questions and potential answers-->
@@ -57,10 +57,10 @@
         <!--container that presents user with correct and incorrect scores-->
         <div id="score_container">
             <div>
-                <h5><i class="fa-solid fa-check"></i> Correct Score:<p>0</p></h5>
+                <h5><i class="fa-solid fa-check"></i> Correct Score:<p id="cScore"></p></h5>
             </div>
             <div>
-                <h5><i class="fa-solid fa-xmark"></i> Incorrect score:<p>0</p></h5>
+                <h5><i class="fa-solid fa-xmark"></i> Incorrect score:<p id="iScore"></p></h5>
             </div>
         </div>
     </main>

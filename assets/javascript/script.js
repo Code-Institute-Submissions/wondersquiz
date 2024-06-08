@@ -7,12 +7,11 @@ const qaContainer = document.getElementById("qa_container");
 const scoreContainer = document.getElementById("score_container");
 const greetContainer = document.getElementById("greet_container");
 
-
 usernameContainer.style.display = "none";
-greetContainer.style.display = "none";
 quizContainer.style.display = "none";
 qaContainer.style.display = "none";
 scoreContainer.style.display = "none";
+greetContainer.style.display = "none";
 
 //reset webpage
 function resetWebpage(){
@@ -36,7 +35,7 @@ function displayUsername(){
 //function to submit username
 function submitUsername(){
     let username = document.getElementById("username");
-    let usersName = username.value
+    let usersName = username.value;
     let usernameSubmit = document.getElementById("submit");
     let greet = document.getElementById("greet");
 
@@ -51,23 +50,13 @@ function submitUsername(){
     }
 }
 
-//ancient wonders quiz
-function ancientWonders(){
-
-}
-
-//modern wonders quiz
-function modernWonders(){
-
-}
-
 //increment correct score function
-function correctScore(){
+function displayCorrectScore(){
 
 }
 
 //increment incorrect score
-function incorrectScore(){
+function displayIncorrectScore(){
 
 }
 

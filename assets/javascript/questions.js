@@ -1,3 +1,5 @@
+//ancient wonders questions and answers
+
 let ancientQuizQuestions = [
     {
         question: "Which one of these structures is not apart of the wonders of the ancient world?",
@@ -26,6 +28,30 @@ let ancientQuizQuestions = [
     }
 ]
 
+//variables to keep score
+let correctScore
+let incorrectScore
+let currentQuestion
+
+//variables to display scores and questions
+const correctScoreCounter = document.getElementById("cScore");
+const incorrectScoreCounter = document.getElementById("iScore");
+const questionContent = document.getElementById("questionContent");
+
+
+//ancient wonders quiz function
+function ancientWonders(){
+    let ancientQuizBttn = document.getElementById("ancient_quiz_bttn");
+    
+    correctScore = 0;
+    incorrectScore = 0;
+
+    correctScoreCounter = correctScore.textContent;
+    incorrectScoreCounter = incorrectScore.textContent;
+
+}
+
+//modern wonders questions and answers
 let modernQuizQuestions = [
     {
         question: "",
@@ -54,3 +80,8 @@ let modernQuizQuestions = [
     },
 
 ]
+
+//modern wonders quiz
+function modernWonders(){
+
+}
