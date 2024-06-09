@@ -101,5 +101,4 @@ function startQuiz(){
 
     //sets the questions array to the available questions
     let availableQuestions = [...quizQuestions];
-    console.log(availableQuestions);
 }
