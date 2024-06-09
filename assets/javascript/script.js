@@ -3,14 +3,10 @@ const howToContainer = document.getElementById("how_to_container");
 const letsPlay = document.getElementById("lets_play_container");
 const usernameContainer = document.getElementById("username_container");
 const quizContainer = document.getElementById("quizes_container");
-const qaContainer = document.getElementById("qa_container");
-const scoreContainer = document.getElementById("score_container");
 const greetContainer = document.getElementById("greet_container");
 
 usernameContainer.style.display = "none";
 quizContainer.style.display = "none";
-qaContainer.style.display = "none";
-scoreContainer.style.display = "none";
 greetContainer.style.display = "none";
 
 //reset webpage
@@ -48,19 +44,4 @@ function submitUsername(){
     usernameContainer.style.display ="none";
     quizContainer.style.display = "block flex";
     }
-}
-
-//increment correct score function
-function displayCorrectScore(){
-
-}
-
-//increment incorrect score
-function displayIncorrectScore(){
-
-}
-
-// display final score
-function displayScore(){
-
 }

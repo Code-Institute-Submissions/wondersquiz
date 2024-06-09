@@ -78,9 +78,6 @@ header {
     margin-bottom: 0.5rem;
 }
 
-.option_btn:hover {
-    border-color: lightskyblue;
-}
 /*lets play button container*/
 #lets_play_container {
     margin-bottom: 0.5rem;

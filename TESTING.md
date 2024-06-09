@@ -26,7 +26,7 @@ The website has been tested on the following devices:
 | ---| ---|
 | script.js was not linked to index.html correctly | changed href attribute to src attribute |
 | onclick function linked to h1 elements reveals all elements rather than just the pregame message and the lets play button. | wrote a seperate function to reset the webpage rather than using an existing function. |
-|  |  |
+| quizQuestions array was not recognised by the console. | Had to rename the array as the name was used elsewhere. |
 |  |  |
 
 ### Unfixed bugs
