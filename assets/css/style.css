@@ -68,7 +68,18 @@ header {
 }
 /*question and answer container*/
 #qa_container {
-    width: 70vw;
+    width: 60vw;
+}
+
+#qa_container > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.option_btn:hover {
+    border-color: lightskyblue;
 }
 /*lets play button container*/
 #lets_play_container {
