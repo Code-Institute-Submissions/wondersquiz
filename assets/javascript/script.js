@@ -60,67 +60,76 @@ function submitUsername(){
 const questions = [
     {
         question: "Which one of these structures is not apart of the wonders of the ancient world?",
-        choice1: "The Pyramids of Giza",
-        choice2: "The Hanging Gardens of Babylon",
-        choice3: "The Temple of Artemis",
-        choice4: "The Great Wall of China",
-        answer: 4
+        answer: [
+            {text: "The Pyramids of Giza", correct: false},
+            {text: "The Hanging Gardens of Babylon", correct: false},
+            {text: "The Temple of Artemis", correct: false},
+            {text: "The Great Wall of China", correct: true}
+        ]
     },
     {
         question: "Which one of these structures represents the King of the Greek Gods?",
-        choice1: "The Statue of Zues",
-        choice2: "Lighthouse of Alexandria",
-        choice3: "Colossus of Rhoades",
-        choice4: "Mausolem at Halicarnassus",
-        answer: 1
+        answer: [
+            {text: "The Statue of Zues", correct: true},
+            {text: "Lighthouse of Alexandria", correct: false},
+            {text: "Colossus of Rhoades", correct: false},
+            {text: "Mausolem at Halicarnassus", correct: false}
+        ] 
     },
     {
         question: "Which one of these structures is located in Turkey?",
-        choice1: "Mausolem at Halicarnassus",
-        choice2: "Lighthouse of Alexandria",
-        choice3: "Hanging Gardens of Babylon",
-        choice4: "Pyramids of Giza",
-        answer: 1
+        answer: [
+            {text: "Mausolem at Halicarnassus", correct: true},
+            {text: "Lighthouse of Alexandria", correct: false},
+            {text: "Hanging Gardens of Babylon", correct: false},
+            {text: "Pyramids of Giza", correct: false}
+        ]  
     },
     {
         question: "What century was the Colossus of Rhoades built?",
-        choice1: "2nd Centure A.D.",
-        choice2: "4th Century B.C.",
-        choice3: "20th Century",
-        choice4: "10th Century A.D.",
-        answer: 2
+        answer: [
+            {text: "2nd Centure A.D.", correct: false},
+            {text: "4th Century B.C.", correct: true},
+            {text: "20th Century", correct: false},
+            {text: "10th Century A.D.", correct: false}
+        ]
     },
     {
         question: "The seven wonders of the ancient world surround which sea?",
-        choice1: "Atlantic",
-        choice2: "Pacific",
-        choice3: "The Gulf of Mexico",
-        choice4: "The Mediterranian",
-        answer: 4
+        answer: [
+            {text: "Atlantic", correct: false},
+            {text: "Pacific", correct: false},
+            {text: "The Gulf of Mexico", correct: false},
+            {text: "The Mediterranian", correct: true}
+        ]
     },
     {
         question: "Which one of these modern wonders is located in Brazil?",
-        choice1: "Taj Mahal",
-        choice2: "Christ the Redeemer",
-        choice3: "Petra",
-        choice4: "Chichen Itza",
-        answer: 2
+        answer: [
+            {text: "Taj Mahal", correct: false},
+            {text: "Christ the Redeemer", correct: true},
+            {text: "Petra", correct: false},
+            {text: "Chichen Itza", correct: false}
+        ]
     },
     {
         question: "One of these structures was built in 80 A.D., which one was it?",
-        choice1: "Colosseum",
-        choice2: "Great Wall of China",
-        choice3: "Machu Picchu",
-        choice4: "Taj Mahal",
-        answer: 1
+        answer: [
+            {text: "Colosseum", correct: true},
+            {text: "Great Wall of China", correct: false},
+            {text: "Machu Picchu", correct: false},
+            {text: "Taj Mahal", correct: false}
+        ]  
     },
     {
         question: "Which one of these structures was built for the architects deceased wife?",
-        choice1: "Taj Mahal",
-        choice2: "Colossus of Rhoades",
-        choice3: "Christ the redeemer",
-        choice4: "Lighthouse of Alexandria",
-        answer: 1
+        answer: [
+            {text: "Taj Mahal", correct: true},
+            {text: "Colossus of Rhoades", correct: false},
+            {text: "Christ the redeemer", correct: false},
+            {text: "Lighthouse of Alexandria", correct: false}
+        ]
+       
     },
 ]
 
@@ -137,8 +146,9 @@ const incorrectScoreCounter = document.getElementById("iScore");
 const questionContent = document.getElementById("questions_Content");
 const startBttn = document.getElementById("startBttn");
 const questionCounterText = document.getElementById("question_counter_text");
-const answerBttn = document.getElementById("answers_container"); 
+const answerBttn = document.getElementsByClassName("option_bttn"); 
 const nextBttn = document.getElementById("next_bttn")
+
 
 const qaContainer = document.getElementById("qa_container");
 const scoreContainer = document.getElementById("score_container");
@@ -177,7 +187,10 @@ function getNewQuestion() {
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * avaiableQuestions.length);
     currentQuestion = avaiableQuestions[questionIndex];
-    questionContent.innerText = currentQuestion.question
+    questionContent.innerText = currentQuestion.question;
+
+    currentQuestion.answer
+
 
 }
 
