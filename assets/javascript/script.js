@@ -176,7 +176,16 @@ function getNewQuestion() {
     });
 
     avaiableQuestions.splice(questionIndex, 1);
-}
+};
+
+options.forEach(option => {
+    option.addEventListener('click', event => {
+        const userChoice = event.target;
+        const userAnswer = userChoice.dataset['number'];
+        console.log(userAnswer);
+    })
+    
+});
 
 //resets webpage
 function resetWebpage(){
@@ -188,9 +197,4 @@ function resetWebpage(){
     qaContainer.style.display = "none";
     scoreContainer.style.display = "none";
     alert("Lets Reset");
-}
-
-
-function checkAnswer(){
-
 }

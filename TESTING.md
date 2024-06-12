@@ -1,5 +1,7 @@
 # Testing
 ## Validator testing
+No Errors were found on WC3 HTML Validator
+No Errors were found on WC3 CSS Validator
 ## Manual testing
 ### Full testing
 The website has been tested on the following devices:
