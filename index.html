@@ -26,12 +26,12 @@
         </div>
         <!--container for button to provide users with game option-->
         <div id="lets_play_container">
-            <button id="lets_play_bttn" onclick="displayUsername()">Lets play</button>
+            <button id="lets_play_bttn" onclick="displayUsername()" aria-label="lets play button">Lets play</button>
         </div>
         <!--container for both username input and submit username button-->
         <div id="username_container">
             <input type="text" id="username" placeholder="Enter your name">
-            <button type="submit" id="submit" onclick="submitUsername()">Submit</button>
+            <button type="submit" id="submit" onclick="submitUsername()" aria-label="submit username">Submit</button>
         </div>
         <!--username response message-->
         <div id="greet_container">
@@ -39,7 +39,7 @@
         </div>
         <!--container with button to start the quiz-->
         <div id="quizes_container">
-            <button id="startBttn" onclick="startQuiz()">Test my knowledge</button>
+            <button id="startBttn" onclick="startQuiz()" aria-label="start button">Test my knowledge</button>
         </div>
         <!--container that presents questions and potential answers-->
         <div id="qa_container">
@@ -47,10 +47,10 @@
                 <h3 id="questions_Content">questions</h3>
             </div>
             <div id="answers_container">
-                <button class="option_bttn" data-number="1">answer</button>
-                <button class="option_bttn" data-number="2">answer</button>
-                <button class="option_bttn" data-number="3">answer</button>
-                <button class="option_bttn" data-number="4">answer</button>
+                <button class="option_bttn" data-number="1" aria-label="option 1">answer</button>
+                <button class="option_bttn" data-number="2" aria-label="option 2">answer</button>
+                <button class="option_bttn" data-number="3" aria-label="option 3">answer</button>
+                <button class="option_bttn" data-number="4" aria-label="option 4">answer</button>
             </div>
         </div>
         <!--container that presents user with correct and incorrect scores-->
