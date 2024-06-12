@@ -192,6 +192,7 @@ options.forEach(option => {
                 title: "Good job!",
                 text: "You got that question right",
                 icon: "success",
+                timer: 1500,
               });
         } else{
             incrementIncorrectScore();
@@ -200,6 +201,7 @@ options.forEach(option => {
                 title: "Unlucky!",
                 text: `You got that question wrong, the correct answer is option ${correctAnswer}`,
                 icon: "warning",
+                timer: 1500,
               });
         }
         setTimeout(getNewQuestion, 2000);
