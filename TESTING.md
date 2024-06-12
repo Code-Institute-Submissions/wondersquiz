@@ -2,6 +2,7 @@
 ## Validator testing
 No Errors were found on WC3 HTML Validator
 No Errors were found on WC3 CSS Validator
+No Errors were found on JSHint
 
 ## Manual testing
 ### Full testing
@@ -33,3 +34,4 @@ The website has been tested on the following devices:
 | when moving onto a question the previous selected answer remains highlighted. |  |
 
 ### Unfixed bugs
+No unfixed bugs

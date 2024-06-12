@@ -1,4 +1,6 @@
 # Wonders Quiz
+![Am I responsive](assets/images/readme/amiresponsive_wondersquiz.png)
+
 Wonders Quiz is a website designed for users to test their knowledge on both the modern wonders of the world and the ancient wonders of the world. The target audience for this quiz isn't limited by age however, it would maily appeal to people with an interest in architecture or history.
 
 #### Link to live website can be found at [Wonders Quiz](https://regan-boreland.github.io/wondersquiz/).
@@ -49,8 +51,8 @@ All information regarding testing is on [testing.md](TESTING.md).
 * HTML5 - to build initial content and structure for the website.
 * CSS - to add style to the content and website.
 * JavaScript - to add interactivity to the website.
-* Github - used to deploy the website.
-* Gitpod - used to build and edit the website.
+* GitHub - used to deploy the website.
+* GitPod - used to build and edit the website.
 * Sweet Alert - used to respond based on if the user got the answer correct or incorrect.
 
 ## Deployment
