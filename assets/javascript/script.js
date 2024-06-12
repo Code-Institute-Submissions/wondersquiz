@@ -163,7 +163,8 @@ function startQuiz(){
 //displays question in element with question_Content id
 function getNewQuestion() {
     if(avaiableQuestions === 0 || questionCounter == maxQuestions){
-        alert(`Congratulations you have finished the quiz, you scored ${correctScore} / ${maxQuestions}. Click the title to reset.`)
+        alert(`Congratulations you have finished the quiz, you scored ${correctScore} / ${maxQuestions}`);
+        resetWebpage();
     };
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * avaiableQuestions.length);
@@ -182,10 +183,42 @@ options.forEach(option => {
     option.addEventListener('click', event => {
         const userChoice = event.target;
         const userAnswer = userChoice.dataset['number'];
-        console.log(userAnswer);
+        const correctAnswer = currentQuestion.answer;
+
+        if(userAnswer == correctAnswer){
+            incrementCorrectScore();
+            questionCounterText.innerHTML = `${questionCounter} / ${maxQuestions}`;
+            swal({
+                title: "Good job!",
+                text: "You got that question right",
+                icon: "success",
+              });
+        } else{
+            incrementIncorrectScore();
+            questionCounterText.innerHTML = `${questionCounter} / ${maxQuestions}`;
+            swal({
+                title: "Unlucky!",
+                text: `You got that question wrong, the correct answer is option ${correctAnswer}`,
+                icon: "warning",
+              });
+        }
+        //getNewQuestion()
+        
     })
     
 });
+
+//increments correct score
+function incrementCorrectScore(){
+    correctScore++
+    correctScoreCounter.innerHTML = correctScore;
+}
+
+//increments incorrect score
+function incrementIncorrectScore(){
+    incorrectScore++
+    incorrectScoreCounter.innerHTML = incorrectScore;
+}
 
 //resets webpage
 function resetWebpage(){
