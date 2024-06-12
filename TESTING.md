@@ -44,7 +44,20 @@ The website was tested on the following browsers:
 `returning users`
 | Goals | How are they achieved? |
 | :--- | :--- |
-| I want the questions to be random every time so I don't know the order and can test my ability to recall the information. | The wonders quiz randomises the questions when the webpage is reloaded. | 
+| I want the questions to be random every time so I don't know the order and can test my ability to recall the information. | The wonders quiz randomises the questions when the webpage is reloaded so the order won't be predictable. | 
+
+### Testing features
+`Index.html`
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Header/title click | Resets the webpage with only the how to play content and the lets play button revealed | Clicked the header/title | Resets the webpage with only how to play content and lets play button on the page | Pass |
+| Lets play button click | Reveals the username input and username submission | Clicked lets play button | Displays username input and username submission | Pass |
+| Username submission | Greets the user with their given username and reveals another button to start the quiz | Clicked username submission button | Greets user and presents the start quiz button | Pass |
+| Test your knowledge button | Starts the game and gives user the first question and potential answers. Shows the score container at the bottom of the page | Clicked on the test you knowledge button | Presents user with first question and potential answers. | Pass |
+| Answer/option buttons | If the chosen answer is correct the user will be presented with an alert that they have got the question correct. If the incorrect answer is chosen the user will be presented with an alert that the selected answer is wrong. | Clicked the correct and incorrect answer. | Both the correct and incorrect answer alerts were presented. | Pass |
+| Finish quiz alert | Once the quiz has been finished the user should get an alert that shows their score out of 8 | Finished the quiz | Alert tells user their score out of 8 | Pass |
+| Webpage reset alert | Resets the webpage to its original status | Clicked the accept on the reset quiz alert | User is presented with the original status of the page. | Pass |
+
 
 ### Fixed bugs
 | Bug | Solution |
