@@ -9,16 +9,6 @@ usernameContainer.style.display = "none";
 quizContainer.style.display = "none";
 greetContainer.style.display = "none";
 
-//resets webpage
-function resetWebpage(){
-    let title = document.getElementById("title");
-
-    howToContainer.style.display = "block flex";
-    letsPlay.style.display = "block flex";
-    usernameContainer.style.display = "none";
-    alert("Lets Reset");
-}
-
 //function to display username input
 function displayUsername(){
     let letsPlayBttn = document.getElementById("lets_play_bttn");
@@ -137,7 +127,6 @@ const incorrectScoreCounter = document.getElementById("iScore");
 const questionContent = document.getElementById("questions_Content");
 const startBttn = document.getElementById("startBttn");
 const questionCounterText = document.getElementById("question_counter_text"); 
-const nextBttn = document.getElementById("next_bttn")
 
 
 const qaContainer = document.getElementById("qa_container");
@@ -164,8 +153,6 @@ function startQuiz(){
     incorrectScore = 0;
     avaiableQuestions = [...questions]
 
-    nextBttn.innerHTML ="Submit Answer";
-
     correctScoreCounter.innerHTML = correctScore;
     incorrectScoreCounter.innerHTML = incorrectScore;
 
@@ -174,17 +161,32 @@ function startQuiz(){
 
 //displays question in element with question_Content id
 function getNewQuestion() {
+    if(avaiableQuestions === 0 || questionCounter == maxQuestions){
+        alert(`Congratulations you have finished the quiz, you scored ${correctScore} / ${maxQuestions}. Click the title to reset.`)
+    };
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * avaiableQuestions.length);
     currentQuestion = avaiableQuestions[questionIndex];
     questionContent.innerText = currentQuestion.question;
-
+//displays potential options in the options buttons
     options.forEach(option => {
         const number = option.dataset['number'];
         option.innerText = currentQuestion['choice' + number]; 
     });
 
     avaiableQuestions.splice(questionIndex, 1);
+}
+
+//resets webpage
+function resetWebpage(){
+    let title = document.getElementById("title");
+
+    howToContainer.style.display = "block flex";
+    letsPlay.style.display = "block flex";
+    usernameContainer.style.display = "none";
+    qaContainer.style.display = "none";
+    scoreContainer.style.display = "none";
+    alert("Lets Reset");
 }
 
 
