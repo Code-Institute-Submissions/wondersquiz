@@ -66,6 +66,7 @@ The website was tested on the following browsers:
 | onclick function linked to h1 elements reveals all elements rather than just the pregame message and the lets play button. | wrote a seperate function to reset the webpage rather than using an existing function. |
 | quizQuestions array was not recognised by the console. | Had to rename the array as the name was used elsewhere. |
 | when moving onto a question the previous selected answer remains highlighted. | Instead of using user feedback of colour change I decided to use Sweet Alerts to inform the user if their selected answer was correct or incorrect. |
+| After adding label for input element submit username function wouldn't progress through the webpage. | Add aria-label to username input. |
 
 ### Unfixed bugs
 No unfixed bugs

@@ -23,12 +23,12 @@ function submitUsername(){
     let usersName = username.value;
     let greet = document.getElementById("greet");
 
-    if(usersName.length < 3 || usersName.length > 9){
+    if(usersName.length < 3 || usersName.length >= 9){
         alert("Please choose a username between 3 and 9 characters");
-    } else {
+    }else {
         //inserts a message to the user
         greet.innerHTML = `Hello ${usersName}, lets test your knowledge.`;
-    greetContainer.style.display = "block flex";
+        greetContainer.style.display = "block flex";
     /**
      * removes the username container
      * reveals the quiz container
@@ -36,7 +36,7 @@ function submitUsername(){
     usernameContainer.style.display ="none";
     quizContainer.style.display = "block flex";
     }
-}
+};
 
 /**
  * 
@@ -190,7 +190,7 @@ options.forEach(option => {
                 title: "Good job!",
                 text: "You got that question right",
                 icon: "success",
-                timer: 1500,
+                timer: 1750,
               });
         } else{
             incrementIncorrectScore();
@@ -199,12 +199,12 @@ options.forEach(option => {
                 title: "Unlucky!",
                 text: `You got that question wrong, the correct answer is option ${correctAnswer}`,
                 icon: "warning",
-                timer: 1500,
+                timer: 1750,
               });
         }
         setTimeout(getNewQuestion, 1750);
         
-    });
+    })
     
 });
 
