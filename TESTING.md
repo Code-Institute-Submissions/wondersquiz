@@ -2,6 +2,7 @@
 ## Validator testing
 No Errors were found on WC3 HTML Validator
 No Errors were found on WC3 CSS Validator
+
 ## Manual testing
 ### Full testing
 The website has been tested on the following devices:
@@ -21,7 +22,7 @@ The website has been tested on the following devices:
 `returning users`
 | Goals | How are they achieved? |
 | :--- | :--- |
-|  |  | 
+| I want the questions to be random every time so I don't know the order and can test my ability to recall the information. | The wonders quiz randomises the questions when the webpage is reloaded. | 
 
 ### Fixed bugs
 | Bug | Solution |

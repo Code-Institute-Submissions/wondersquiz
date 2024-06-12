@@ -11,7 +11,6 @@ greetContainer.style.display = "none";
 
 //function to display username input
 function displayUsername(){
-    let letsPlayBttn = document.getElementById("lets_play_bttn");
     
     usernameContainer.style.display = "block flex";
     howToContainer.style.display = "none";
@@ -22,7 +21,6 @@ function displayUsername(){
 function submitUsername(){
     let username = document.getElementById("username");
     let usersName = username.value;
-    let usernameSubmit = document.getElementById("submit");
     let greet = document.getElementById("greet");
 
     if(usersName.length < 3 || usersName.length > 9){
@@ -224,8 +222,6 @@ function incrementIncorrectScore(){
 
 //resets webpage
 function resetWebpage(){
-    let title = document.getElementById("title");
-
     howToContainer.style.display = "block flex";
     letsPlay.style.display = "block flex";
     usernameContainer.style.display = "none";
