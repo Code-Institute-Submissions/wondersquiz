@@ -11,7 +11,7 @@ In the planning stage I used a wireframe app called [balsamiq](https://balsamiq.
 
 ![wireframe opening page](assets/images/readme/openingpage.png)
 
-![wireframe quiz selection](assets/images/readme/quizselection.png)
+![start quiz](assets/images/readme/wireframe.startquiz.png)
 
 ![wireframe quiz](assets/images/readme/quiz.png)
 
@@ -49,7 +49,7 @@ I have chosen two fonts to use on the website, these are:
 * Upon clicking the lets play button the user will be have the ability to enter a username.
 
 #### Username input
-![username input](assets/images/readme/usernameinput.png
+![username input](assets/images/readme/usernameinput.png)
 * The username input allows users to enter a username and the webpage will respond provided the username is between 2 and 9 characters.
 * Upon entering the username the webpage will greet the user by their given name.
 
