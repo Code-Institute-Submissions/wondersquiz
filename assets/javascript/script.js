@@ -202,7 +202,7 @@ options.forEach(option => {
                 timer: 1500,
               });
         }
-        setTimeout(getNewQuestion, 2000);
+        setTimeout(getNewQuestion, 1750);
         
     })
     
