@@ -4,6 +4,22 @@ No Errors were found on WC3 HTML Validator
 No Errors were found on WC3 CSS Validator
 No Errors were found on JSHint
 
+Lighthouse on mobile phones:
+
+![lighthouse on mobile phones](assets/images/testing/lighthouse_on_mobile.png)
+
+lighthouse on iPads:
+
+![lighthouse on iPad](assets/images/testing/lighthouse_on_ipad.png)
+
+Lighthouse on small laptops:
+
+![lighthouse on small laptops](assets/images/testing/lighthouse_on_smalllaptops.png)
+
+Lighthouse on high resolution devices:
+
+![lighthouse on high resolution devices](assets/images/testing/lighthouse_on_highresolution.png)
+
 ## Manual testing
 ### Full testing
 The website has been tested on the following devices:
