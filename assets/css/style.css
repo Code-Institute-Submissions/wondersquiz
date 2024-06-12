@@ -106,7 +106,8 @@ button:hover {
     margin-top: 1rem;
 }
 
-input {
+/*styles for username input and username input label*/
+#username {
     border: 2px solid black;
     border-radius: 12px;
     background: gainsboro;
@@ -114,10 +115,7 @@ input {
     width: 45vw;
     height: 7vh;
     font-size: 20px;
-}
-
-#username {
-    padding-left: 0.5rem;
+    padding-left: 0.5rem ;
 }
 
 /*user greeting styles*/
