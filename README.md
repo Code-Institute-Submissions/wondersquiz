@@ -34,6 +34,65 @@ I have chosen two fonts to use on the website, these are:
 * 'Fjalla One'
 # Features
 ## Existing features
+#### Header
+![wonders quiz header](assets/images/readme/wondersquiz_header.png)
+* The header for Wonders Quiz contains the title of the webpage, informing users what the website is called.
+* The header/title also doubles as a way for users to reset the webpage if they choose to.
+
+#### How to play instructions
+![wonders quiz how to play](assets/images/readme/wondersquiz_howtoplay.png)
+* The "how to play section" is a small message telling the user the point system and giving them a small message reading "the questions won't be easy good luck!".
+
+#### Lets play button
+![lets play button](assets/images/readme/Letsplaybutton.png)
+* The lets play button is a button element that contains the content "Lets Play".
+* Upon clicking the lets play button the user will be have the ability to enter a username.
+
+#### Username input
+![username input](assets/images/readme/usernameinput.png)
+* The username input allows users to enter a username and the webpage will respond provided the username is between 2 and 9 characters.
+* Upon entering the username the webpage will greet the user by their given name.
+
+#### Greeting message
+![greeting message](assets/images/readme/userresponse.png)
+* Upon entering the username the webpage greets the user by their given name.
+* This shows interactivity between the user and the webpage.
+
+#### Start button
+![start button](assets/images/readme/startbutton.png)
+* The start button contains the content "test you knowledge" this is an encouragement for the user to start the game.
+* Upon clicking the start button a container with the questions and answers will reveal itself.
+
+#### Question and answer container
+![question and answer container](assets/images/readme/questionanswerbox.png)
+* The question & answer box is a container with the questions and answers.
+* When the user has chosen an answer the webapge will respond with either a congratulations message or an unlucky message.
+
+#### Correct answer response
+![correct answer response](assets/images/readme/correctanswerresponse.png)
+* The correct answer response only appear if the user has selected the correct answer.
+* To prevent the user from staying on the response a time has been set of 1.5 seconds, when that limit has been reached the response will disappear and then the new question will appear 0.5 seconds later.
+
+#### Incorrect answer response
+![Incorrect answer response](assets/images/readme/incorrectanswerresponse.png)
+* The incorrect answer response appears if the user has selected the incorrect answer. Similar to the correct answer response, the incorrect answer response has a time limit set.
+* If the incorrect answer response appears it will contain a small message and reveal the correct answer to the user.
+
+#### Score container
+![Score container](assets/images/readme/scorecontainer.png)
+* The score container is used to inform the user of both their correct and incorrect answers. 
+* The score congtainer also informs users of what question they're on. The maximum questions on the quiz is 8.
+
+#### Finish quiz alert
+![finish quiz alert](assets/images/readme/finishquizalert.png)
+* The finish quiz alert informs the user that they have finished the quiz.
+* The finish quiz alert also informs the user what their correct score out of the maximum number of questions.
+
+#### Reset quiz alert
+![Reset quiz alert](assets/images/readme/resetquizalert.png)
+* The reset quiz alert is used to reset the webpage to its original viewpoint, with only being the title and the how to play content on the page. 
+* The reset quiz alert also appears when the user clicks the title to reset the webpage.
+
 ## Future features
 * I would like to add a scoreboard so users can see who has got the most questions right.
 * I would like to add a difficulty section so the users can determine the quiz based on their knowledge.

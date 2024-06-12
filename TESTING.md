@@ -28,6 +28,11 @@ The website has been tested on the following devices:
 * IPad pro
 * Asus Zenbook Duo
 
+The website was tested on the following browsers:
+* Google chrome
+* Safari
+* Microsoft Edge
+
 ### Testing user stories
 `First time visitors`
 | Goals | How are they achieved? |
