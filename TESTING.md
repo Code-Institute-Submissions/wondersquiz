@@ -65,7 +65,7 @@ The website was tested on the following browsers:
 | script.js was not linked to index.html correctly | changed href attribute to src attribute |
 | onclick function linked to h1 elements reveals all elements rather than just the pregame message and the lets play button. | wrote a seperate function to reset the webpage rather than using an existing function. |
 | quizQuestions array was not recognised by the console. | Had to rename the array as the name was used elsewhere. |
-| when moving onto a question the previous selected answer remains highlighted. |  |
+| when moving onto a question the previous selected answer remains highlighted. | Instead of using user feedback of colour change I decided to use Sweet Alerts to inform the user if their selected answer was correct or incorrect. |
 
 ### Unfixed bugs
 No unfixed bugs

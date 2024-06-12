@@ -149,3 +149,4 @@ The steps to clone are:
 
 ## Acknowledgment
 * Mentor: Jubril Akolade
+* Used a YouTube video for guidance on how to display the questions and answers in their given area [James Q Quick](https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF&index=3) 
