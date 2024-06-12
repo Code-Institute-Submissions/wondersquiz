@@ -110,7 +110,7 @@ const questions = [
         choice4: "Lighthouse of Alexandria",
         answer: 1
     },
-]
+];
 
 //default variables for tracking score, question number and random questions
 let correctScore; 
@@ -149,7 +149,7 @@ function startQuiz(){
     questionCounter = 0;
     correctScore = 0;
     incorrectScore = 0;
-    avaiableQuestions = [...questions]
+    avaiableQuestions = [...questions];
 
     correctScoreCounter.innerHTML = correctScore;
     incorrectScoreCounter.innerHTML = incorrectScore;
@@ -163,7 +163,7 @@ function getNewQuestion() {
     if(avaiableQuestions === 0 || questionCounter == maxQuestions){
         alert(`Congratulations you have finished the quiz, you scored ${correctScore} / ${maxQuestions}`);
         resetWebpage();
-    };
+    }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * avaiableQuestions.length);
     currentQuestion = avaiableQuestions[questionIndex];
@@ -175,7 +175,7 @@ function getNewQuestion() {
     });
 
     avaiableQuestions.splice(questionIndex, 1);
-};
+}
 
 options.forEach(option => {
     option.addEventListener('click', event => {
@@ -204,19 +204,19 @@ options.forEach(option => {
         }
         setTimeout(getNewQuestion, 1750);
         
-    })
+    });
     
 });
 
 //increments correct score
 function incrementCorrectScore(){
-    correctScore++
+    correctScore++;
     correctScoreCounter.innerHTML = correctScore;
 }
 
 //increments incorrect score
 function incrementIncorrectScore(){
-    incorrectScore++
+    incorrectScore++;
     incorrectScoreCounter.innerHTML = incorrectScore;
 }
 
