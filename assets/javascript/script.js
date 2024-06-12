@@ -155,6 +155,7 @@ function startQuiz(){
 
     correctScoreCounter.innerHTML = correctScore;
     incorrectScoreCounter.innerHTML = incorrectScore;
+    questionCounterText.innerHTML = `${questionCounter} / ${maxQuestions}`;
 
     getNewQuestion();
 }
