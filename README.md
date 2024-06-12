@@ -51,6 +51,7 @@ All information regarding testing is on [testing.md](TESTING.md).
 * JavaScript - to add interactivity to the website.
 * Github - used to deploy the website.
 * Gitpod - used to build and edit the website.
+* Sweet Alert - used to respond based on if the user got the answer correct or incorrect.
 
 ## Deployment
 The website was deployed through github pages, the following steps are used to do this:
