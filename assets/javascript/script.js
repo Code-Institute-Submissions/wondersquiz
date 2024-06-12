@@ -202,7 +202,7 @@ options.forEach(option => {
                 icon: "warning",
               });
         }
-        //getNewQuestion()
+        setTimeout(getNewQuestion, 2000);
         
     })
     
