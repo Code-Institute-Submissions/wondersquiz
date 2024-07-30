@@ -9,8 +9,8 @@ const scoreContainer = document.getElementById("score_container");
 
 //button variables
 const letsPlayBttn = document.getElementById("lets_play_bttn");
-const startBttn = document.getElementById("submit");
-
+const submitBttn = document.getElementById("submit");
+const startBttn = document.getElementById("startBttn");
 
 function loadWebpage(){
     howToContainer.style.display = "block flex"
@@ -32,14 +32,13 @@ function displayUsername(){
     letsPlay.style.display = "none";
 };
 
-startBttn.addEventListener("click", submitUsername);
+submitBttn.addEventListener("click", submitUsername);
 
 //function to submit username
 function submitUsername(){
     let username = document.getElementById("username");
     let usersName = username.value;
     let greet = document.getElementById("greet");
-    let userWarning = document.getElementById("userwarning")
 
     if(usersName.length < 3 || usersName.length >= 9){
         alert("Please follow the instructions regarding your username!");
@@ -55,3 +54,119 @@ function submitUsername(){
     quizContainer.style.display = "block flex";
     }
 };
+
+/**
+ * 
+ * GAME FUNCTIONS
+ * 
+ */
+
+//quiz questions
+const questions = [
+    {
+        question: "Which one of these structures is not apart of the wonders of the ancient world?",
+        choice1: "The Pyramids of Giza",
+        choice2: "The Hanging Gardens of Babylon",
+        choice3: "The Temple of Artemis",
+        choice4: "The Great Wall of China",
+        answer: 4
+    },
+    {
+        question: "Which one of these structures represents the King of the Greek Gods?",
+        choice1: "The Statue of Zues",
+        choice2: "Lighthouse of Alexandria",
+        choice3: "Colossus of Rhoades",
+        choice4: "Mausolem at Halicarnassus",
+        answer: 1
+    },
+    {
+        question: "Which one of these structures is located in Turkey?",  
+        choice1: "Mausolem at Halicarnassus",
+        choice2: "Lighthouse of Alexandria",
+        choice3: "Hanging Gardens of Babylon",
+        choice4: "Pyramids of Giza",
+        answer: 1
+    },
+    {
+        question: "What century was the Colossus of Rhoades built?",
+        choice1: "2nd Centure A.D.",
+        choice2: "4th Century B.C.",
+        choice3: "20th Century",
+        choice4: "10th Century A.D.",
+        answer: 2
+    },
+    {
+        question: "The seven wonders of the ancient world surround which sea?",
+        choice1: "Atlantic",
+        choice2: "Pacific",
+        choice3: "The Gulf of Mexico",
+        choice4: "The Mediterranian",
+        answer: 4
+    },
+    {
+        question: "Which one of these modern wonders is located in Brazil?",
+        choice1: "Taj Mahal",
+        choice2: "Christ the Redeemer",
+        choice3: "Petra",
+        choice4: "Chichen Itza",
+        answer: 2
+    },
+    {
+        question: "One of these structures was built in 80 A.D., which one was it?",
+        choice1: "Colosseum",
+        choice2: "Great Wall of China",
+        choice3: "Machu Picchu",
+        choice4: "Taj Mahal",
+        answer: 1
+    },
+    {
+        question: "Which one of these structures was built for the architects deceased wife?",
+        choice1: "Taj Mahal",
+        choice2: "Colossus of Rhoades",
+        choice3: "Christ the redeemer",
+        choice4: "Lighthouse of Alexandria",
+        answer: 1
+    },
+];
+
+//default variables for tracking score, question number and random questions
+let correctScore; 
+let incorrectScore; 
+let currentQuestion = {}; 
+let questionCounter; 
+let avaiableQuestions = [];
+
+//variables to display scores, questions and option buttons
+const correctScoreCounter = document.getElementById("cScore");
+const incorrectScoreCounter = document.getElementById("iScore");
+const questionContent = document.getElementById("questions_Content");
+const questionCounterText = document.getElementById("question_counter_text"); 
+
+//creates array from option buttons
+const options = Array.from(document.getElementsByClassName("option_bttn"));
+//maximum questions in the quiz
+const maxQuestions = 8;
+
+//function to start quiz
+function startQuiz(){
+    //reveals score and questions containers
+    questionContainer.style.display = "block flex";
+    scoreContainer.style.display = "block flex";
+    //removes start button and greeting container
+    submitBttn.style.display = "none";
+    greetContainer.style.display = "none";
+
+    //sets values for below variables
+    questionCounter = 0;
+    correctScore = 0;
+    incorrectScore = 0;
+    avaiableQuestions = [...questions];
+
+    correctScoreCounter.innerHTML = correctScore;
+    incorrectScoreCounter.innerHTML = incorrectScore;
+    questionCounterText.innerHTML = `${questionCounter} / ${maxQuestions}`;
+
+    getNewQuestion();
+};
+
+startBttn.addEventListener("click", startQuiz);
