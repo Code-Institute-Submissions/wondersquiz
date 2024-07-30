@@ -142,6 +142,10 @@ button:hover {
     padding: 0.5rem;
 }
 
+.option_bttn {
+    width: 80vw;
+}
+
 .swal-button {
     width: 30vw;
 }
@@ -177,6 +181,10 @@ button, input {
 
     input {
         height: 10vh;
+    }
+
+    .option_bttn {
+        width: 60vw;
     }
 
 }

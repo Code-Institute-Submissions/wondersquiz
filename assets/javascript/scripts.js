@@ -170,3 +170,22 @@ function startQuiz(){
 };
 
 startBttn.addEventListener("click", startQuiz);
+
+//displays question in element with question_Content id
+function getNewQuestion() {
+    if(avaiableQuestions === 0 || questionCounter == maxQuestions){
+        alert(`Congratulations you have finished the quiz, you scored ${correctScore} / ${maxQuestions}`);
+        resetWebpage();
+    }
+    questionCounter++;
+    const questionIndex = Math.floor(Math.random() * avaiableQuestions.length);
+    currentQuestion = avaiableQuestions[questionIndex];
+    questionContent.innerText = currentQuestion.question;
+//displays potential options in the options buttons
+    options.forEach(option => {
+        const number = option.dataset['number'];
+        option.innerText = currentQuestion['choice' + number]; 
+    });
+
+    avaiableQuestions.splice(questionIndex, 1);
+};
