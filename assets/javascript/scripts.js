@@ -154,6 +154,7 @@ function startQuiz(){
     scoreContainer.style.display = "block flex";
     //removes start button and greeting container
     submitBttn.style.display = "none";
+    startBttn.style.display = "none";
     greetContainer.style.display = "none";
 
     //sets values for below variables
@@ -188,4 +189,47 @@ function getNewQuestion() {
     });
 
     avaiableQuestions.splice(questionIndex, 1);
+};
+
+options.forEach(option => {
+    option.addEventListener('click', event => {
+        const userChoice = event.target;
+        const userAnswer = userChoice.dataset['number'];
+        const correctAnswer = currentQuestion.answer;
+
+        if(userAnswer == correctAnswer){
+            incrementCorrectScore();
+            questionCounterText.innerHTML = `${questionCounter} / ${maxQuestions}`;
+            swal({
+                title: "Good job!",
+                text: "You got that question right",
+                icon: "success",
+                timer: 1750,
+              });
+        } else{
+            incrementIncorrectScore();
+            questionCounterText.innerHTML = `${questionCounter} / ${maxQuestions}`;
+            swal({
+                title: "Unlucky!",
+                text: `You got that question wrong, the correct answer is option ${correctAnswer}`,
+                icon: "warning",
+                timer: 1750,
+              });
+        }
+        setTimeout(getNewQuestion, 2500);
+        
+    })
+    
+});
+
+//increments correct score
+function incrementCorrectScore(){
+    correctScore++;
+    correctScoreCounter.innerHTML = correctScore;
+};
+
+//increments incorrect score
+function incrementIncorrectScore(){
+    incorrectScore++;
+    incorrectScoreCounter.innerHTML = incorrectScore;
 };
