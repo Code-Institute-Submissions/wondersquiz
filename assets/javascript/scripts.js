@@ -145,7 +145,7 @@ const questionCounterText = document.getElementById("question_counter_text");
 //creates array from option buttons
 const options = Array.from(document.getElementsByClassName("option_bttn"));
 //maximum questions in the quiz
-const maxQuestions = 8;
+const maxQuestions = 2;
 
 //function to start quiz
 function startQuiz(){
@@ -174,9 +174,10 @@ startBttn.addEventListener("click", startQuiz);
 
 //displays question in element with question_Content id
 function getNewQuestion() {
+    let finalResult = document.getElementById("finalResult");
     if(avaiableQuestions === 0 || questionCounter == maxQuestions){
-        alert(`Congratulations you have finished the quiz, you scored ${correctScore} / ${maxQuestions}`);
-        resetWebpage();
+        scoreContainer.style.display = "block flex";
+        loadWebpage();
     }
     questionCounter++;
     const questionIndex = Math.floor(Math.random() * avaiableQuestions.length);
@@ -232,4 +233,4 @@ function incrementCorrectScore(){
 function incrementIncorrectScore(){
     incorrectScore++;
     incorrectScoreCounter.innerHTML = incorrectScore;
-};
+}; 

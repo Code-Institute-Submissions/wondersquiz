@@ -150,6 +150,12 @@ button:hover {
     width: 30vw;
 }
 
+#finalResult {
+    background-color: gainsboro;
+    border: 2px solid black;
+    padding: 5px;
+}
+
 /*media query for tablets*/
 @media screen and (min-width: 768px) {
     /*body styles*/
