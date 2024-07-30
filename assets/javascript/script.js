@@ -4,10 +4,16 @@ const letsPlay = document.getElementById("lets_play_container");
 const usernameContainer = document.getElementById("username_container");
 const quizContainer = document.getElementById("quizes_container");
 const greetContainer = document.getElementById("greet_container");
+const questionContainer = document.getElementById("qa_container");
+const scoreContainer = document.getElementById("score_container");
 
-usernameContainer.style.display = "none";
-quizContainer.style.display = "none";
-greetContainer.style.display = "none";
+function loadWebpage(){
+    usernameContainer.style.display = "none";
+    quizContainer.style.display = "none";
+    greetContainer.style.display = "none";
+    questionContainer.style.display = "none";
+    scoreContainer.style.display = "none";
+};
 
 //function to display username input
 function displayUsername(){
@@ -126,11 +132,6 @@ const questionContent = document.getElementById("questions_Content");
 const startBttn = document.getElementById("startBttn");
 const questionCounterText = document.getElementById("question_counter_text"); 
 
-
-const qaContainer = document.getElementById("qa_container");
-const scoreContainer = document.getElementById("score_container");
-qaContainer.style.display = "none";
-scoreContainer.style.display = "none";
 //creates array from option buttons
 const options = Array.from(document.getElementsByClassName("option_bttn"));
 //maximum questions in the quiz
@@ -139,7 +140,7 @@ const maxQuestions = 8;
 //function to start quiz
 function startQuiz(){
     //reveals score and questions containers
-    qaContainer.style.display = "block flex";
+    questionContainer.style.display = "block flex";
     scoreContainer.style.display = "block flex";
     //removes start button and greeting container
     startBttn.style.display = "none";
@@ -218,14 +219,4 @@ function incrementCorrectScore(){
 function incrementIncorrectScore(){
     incorrectScore++;
     incorrectScoreCounter.innerHTML = incorrectScore;
-}
-
-//resets webpage
-function resetWebpage(){
-    howToContainer.style.display = "block flex";
-    letsPlay.style.display = "block flex";
-    usernameContainer.style.display = "none";
-    qaContainer.style.display = "none";
-    scoreContainer.style.display = "none";
-    alert("Lets Reset");
 }

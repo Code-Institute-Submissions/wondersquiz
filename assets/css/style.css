@@ -68,7 +68,7 @@ header {
 }
 /*question and answer container*/
 #qa_container {
-    width: 60vw;
+    width: 90vw;
 }
 
 #qa_container > div {
@@ -92,6 +92,7 @@ button {
     height: 7vh;
     margin-top: 1rem;
     font-size: 20px;
+    padding: 0.5rem;
 
 }
 
@@ -103,8 +104,19 @@ button:hover {
 #username_container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 1rem;
 }
+
+#username_container > h4 {
+    background-color: gainsboro;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 0 15px;
+    padding: 1px;
+}
+
 
 /*styles for username input and username input label*/
 #username {
@@ -148,6 +160,11 @@ body {
 
 button, input {
     font-size: 130%;
+}
+
+#submit {
+    width: 200px;
+    height: 100px;
 }
 
 }
