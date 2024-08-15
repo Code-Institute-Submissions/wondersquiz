@@ -67,6 +67,7 @@ The website was tested on the following browsers:
 | quizQuestions array was not recognised by the console. | Had to rename the array as the name was used elsewhere. |
 | when moving onto a question the previous selected answer remains highlighted. | Instead of using user feedback of colour change I decided to use Sweet Alerts to inform the user if their selected answer was correct or incorrect. |
 | After adding label for input element submit username function wouldn't progress through the webpage. | Add aria-label to username input. |
+| After splicing the final quiz question from the array a bug states there is no other questions available. | Reduced the amount of available questions to 7, leaving one question in the array. |
 
 ### Unfixed bugs
 No unfixed bugs

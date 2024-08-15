@@ -145,7 +145,7 @@ const questionCounterText = document.getElementById("question_counter_text");
 //creates array from option buttons
 const options = Array.from(document.getElementsByClassName("option_bttn"));
 //maximum questions in the quiz
-const maxQuestions = 2;
+const maxQuestions = 7;
 
 //function to start quiz
 function startQuiz(){
